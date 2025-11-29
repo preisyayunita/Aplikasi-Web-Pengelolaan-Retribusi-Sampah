@@ -1,0 +1,272 @@
+INFO - 2025-11-01 11:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:35:07 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"selamat malam","status":"success","message":"Permintaan diproses. Sisa Credit : 669"}
+INFO - 2025-11-01 11:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:44:37 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"tes","status":"success","message":"Permintaan diproses. Sisa Credit : 664"}
+INFO - 2025-11-01 11:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:52:46 --> Riwayat SMS disimpan: {"tujuan":"6282188832471","pesan":"teesss","status":"success","message":"Permintaan diproses. Sisa Credit : 659"}
+INFO - 2025-11-01 11:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:53:05 --> Riwayat SMS disimpan: {"tujuan":"+6282188832471","pesan":"hmmm","status":"success","message":"Permintaan diproses. Sisa Credit : 654"}
+INFO - 2025-11-01 11:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 11:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:02:31 --> Status SMS: success
+INFO - 2025-11-01 12:02:31 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"tesawdawwdas","status":"success","message":"Permintaan diproses. Sisa Credit : 649"}
+INFO - 2025-11-01 12:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:09:25 --> Status SMS: success
+INFO - 2025-11-01 12:09:25 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"teawdasdawd","status":"success","message":"Permintaan diproses. Sisa Credit : 644"}
+INFO - 2025-11-01 12:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:11:52 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 639"}
+DEBUG - 2025-11-01 12:11:52 --> Status SMS: success
+INFO - 2025-11-01 12:11:52 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"awdasdawd","status":"success","message":"Permintaan diproses. Sisa Credit : 639"}
+INFO - 2025-11-01 12:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:12:47 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 634"}
+DEBUG - 2025-11-01 12:12:47 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 634"}
+DEBUG - 2025-11-01 12:12:47 --> Status SMS: success
+INFO - 2025-11-01 12:12:47 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"faesggfnvhbj","status":"success","message":"Permintaan diproses. Sisa Credit : 634"}
+INFO - 2025-11-01 12:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:16:03 --> pesan: wadwdawdadw2
+CRITICAL - 2025-11-01 12:16:03 --> ErrorException: Array to string conversion
+[Method: POST, Route: admin/kirimSms]
+in APPPATH/Controllers/Admin.php on line 948.
+ 1 APPPATH/Controllers/Admin.php(948): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->kirimSms()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2025-11-01 12:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:16:27 --> pesan: wadwdawdadw2
+DEBUG - 2025-11-01 12:16:27 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 629"}
+DEBUG - 2025-11-01 12:16:27 --> Status SMS: success
+INFO - 2025-11-01 12:16:27 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"wadwdawdadw2","status":"success","message":"Permintaan diproses. Sisa Credit : 629"}
+INFO - 2025-11-01 12:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:16:34 --> pesan: waddwdawdawwwww
+DEBUG - 2025-11-01 12:16:34 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 624"}
+DEBUG - 2025-11-01 12:16:34 --> Status SMS: success
+INFO - 2025-11-01 12:16:34 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"waddwdawdawwwww","status":"success","message":"Permintaan diproses. Sisa Credit : 624"}
+INFO - 2025-11-01 12:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:22:47 --> pesan: tasdfdse
+DEBUG - 2025-11-01 12:22:47 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 619"}
+DEBUG - 2025-11-01 12:22:47 --> Status SMS: success
+INFO - 2025-11-01 12:22:47 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"tasdfdse","status":"success","message":"Permintaan diproses. Sisa Credit : 619"}
+INFO - 2025-11-01 12:22:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:23:14 --> pesan: wadhakjwdasjkdnawjkdaw
+DEBUG - 2025-11-01 12:23:14 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 614"}
+DEBUG - 2025-11-01 12:23:14 --> Status SMS: success
+INFO - 2025-11-01 12:23:14 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"wadhakjwdasjkdnawjkdaw","status":"success","message":"Permintaan diproses. Sisa Credit : 614"}
+INFO - 2025-11-01 12:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-01 12:36:57 --> ErrorException: Undefined variable $encodedPesan
+[Method: POST, Route: admin/kirimSms]
+in APPPATH/Controllers/Admin.php on line 947.
+ 1 APPPATH/Controllers/Admin.php(947): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->kirimSms()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2025-11-01 12:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:37:18 --> API Response: {"status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+DEBUG - 2025-11-01 12:37:18 --> Status SMS: error
+INFO - 2025-11-01 12:37:18 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"awdwdasdtesss","status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+INFO - 2025-11-01 12:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:38:28 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 609"}
+DEBUG - 2025-11-01 12:38:28 --> Status SMS: success
+INFO - 2025-11-01 12:38:28 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"dwadawdawdwa","status":"success","message":"Permintaan diproses. Sisa Credit : 609"}
+INFO - 2025-11-01 12:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:44:01 --> API Response: {"status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+DEBUG - 2025-11-01 12:44:01 --> Status SMS: error
+INFO - 2025-11-01 12:44:01 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"halo","status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+INFO - 2025-11-01 12:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:45:01 --> API Response: {"status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+DEBUG - 2025-11-01 12:45:01 --> Status SMS: error
+INFO - 2025-11-01 12:45:01 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"waesrtfyghj","status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+INFO - 2025-11-01 12:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:46:42 --> API Response: {"status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+DEBUG - 2025-11-01 12:46:42 --> Status SMS: error
+INFO - 2025-11-01 12:46:42 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"awdwadawdawd","status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+INFO - 2025-11-01 12:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:48:07 --> API Response: {"status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+DEBUG - 2025-11-01 12:48:07 --> Status SMS: error
+INFO - 2025-11-01 12:48:07 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"oiii","status":"error","message":"Authorization Invalid, Periksa kembali token \/ apikey Anda."}
+INFO - 2025-11-01 12:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:49:35 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 604"}
+DEBUG - 2025-11-01 12:49:35 --> Status SMS: success
+INFO - 2025-11-01 12:49:35 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"awdawdawd","status":"success","message":"Permintaan diproses. Sisa Credit : 604"}
+INFO - 2025-11-01 12:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:50:43 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 599"}
+DEBUG - 2025-11-01 12:50:43 --> Status SMS: success
+INFO - 2025-11-01 12:50:43 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"helo","status":"success","message":"Permintaan diproses. Sisa Credit : 599"}
+INFO - 2025-11-01 12:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:53:23 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 594"}
+DEBUG - 2025-11-01 12:53:23 --> Status SMS: success
+INFO - 2025-11-01 12:53:23 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"wadhio","status":"success","message":"Permintaan diproses. Sisa Credit : 594"}
+INFO - 2025-11-01 12:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:53:36 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 589"}
+DEBUG - 2025-11-01 12:53:36 --> Status SMS: success
+INFO - 2025-11-01 12:53:36 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"tess","status":"success","message":"Permintaan diproses. Sisa Credit : 589"}
+INFO - 2025-11-01 12:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:58:01 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 584"}
+DEBUG - 2025-11-01 12:58:01 --> Status SMS: success
+INFO - 2025-11-01 12:58:01 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"woii","status":"success","message":"Permintaan diproses. Sisa Credit : 584"}
+INFO - 2025-11-01 12:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:58:16 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 549"}
+DEBUG - 2025-11-01 12:58:16 --> Status SMS: success
+INFO - 2025-11-01 12:58:16 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"haii","status":"success","message":"Permintaan diproses. Sisa Credit : 549"}
+INFO - 2025-11-01 12:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:59:06 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 514"}
+DEBUG - 2025-11-01 12:59:06 --> Status SMS: success
+INFO - 2025-11-01 12:59:06 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"haiii","status":"success","message":"Permintaan diproses. Sisa Credit : 514"}
+INFO - 2025-11-01 12:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:59:19 --> API Response: 
+INFO - 2025-11-01 12:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 12:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 12:59:34 --> API Response: 
+INFO - 2025-11-01 12:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:00:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:00:04 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 479"}
+DEBUG - 2025-11-01 13:00:04 --> Status SMS: success
+INFO - 2025-11-01 13:00:04 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"adawdasdw","status":"success","message":"Permintaan diproses. Sisa Credit : 479"}
+INFO - 2025-11-01 13:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:00:13 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 444"}
+DEBUG - 2025-11-01 13:00:13 --> Status SMS: success
+INFO - 2025-11-01 13:00:13 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"sadawdsdwadasdwa","status":"success","message":"Permintaan diproses. Sisa Credit : 444"}
+INFO - 2025-11-01 13:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:03:12 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 409"}
+DEBUG - 2025-11-01 13:03:12 --> Status SMS: success
+INFO - 2025-11-01 13:03:12 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"heawdaw","status":"success","message":"Permintaan diproses. Sisa Credit : 409"}
+INFO - 2025-11-01 13:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:03:19 --> API Response: 
+INFO - 2025-11-01 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-01 13:19:01 --> ErrorException: Undefined variable $encodedSender
+[Method: POST, Route: admin/kirimSms]
+in APPPATH/Controllers/Admin.php on line 946.
+ 1 APPPATH/Controllers/Admin.php(946): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->kirimSms()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+INFO - 2025-11-01 13:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:19:31 --> API Response: 
+INFO - 2025-11-01 13:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:21:08 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 374"}
+DEBUG - 2025-11-01 13:21:08 --> Status SMS: success
+INFO - 2025-11-01 13:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:21:18 --> API Response: 
+INFO - 2025-11-01 13:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:21:53 --> API Response: 
+INFO - 2025-11-01 13:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:22:01 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 339"}
+DEBUG - 2025-11-01 13:22:01 --> Status SMS: success
+INFO - 2025-11-01 13:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:23:39 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 334"}
+DEBUG - 2025-11-01 13:23:39 --> Status SMS: success
+INFO - 2025-11-01 13:23:39 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"how","status":"success","message":"Permintaan diproses. Sisa Credit : 334"}
+INFO - 2025-11-01 13:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:25:29 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 299"}
+DEBUG - 2025-11-01 13:25:29 --> Status SMS: success
+INFO - 2025-11-01 13:25:29 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"hmmm awdasdwdwadasdwad","status":"success","message":"Permintaan diproses. Sisa Credit : 299"}
+INFO - 2025-11-01 13:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:25:51 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 264"}
+DEBUG - 2025-11-01 13:25:51 --> Status SMS: success
+INFO - 2025-11-01 13:25:51 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"ini pesan tes","status":"success","message":"Permintaan diproses. Sisa Credit : 264"}
+INFO - 2025-11-01 13:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:27:14 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 229"}
+DEBUG - 2025-11-01 13:27:14 --> Status SMS: success
+INFO - 2025-11-01 13:27:14 --> Riwayat SMS disimpan: {"tujuan":"089643221363","pesan":"idk how i can sent this :v","status":"success","message":"Permintaan diproses. Sisa Credit : 229"}
+INFO - 2025-11-01 13:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:30:26 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 194"}
+DEBUG - 2025-11-01 13:30:26 --> Status SMS: success
+INFO - 2025-11-01 13:30:26 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"haloo hmmm AdaS","status":"success","message":"Permintaan diproses. Sisa Credit : 194"}
+INFO - 2025-11-01 13:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-01 13:32:50 --> API Response: {"status":"success","message":"Permintaan diproses. Sisa Credit : 159"}
+DEBUG - 2025-11-01 13:32:50 --> Status SMS: success
+INFO - 2025-11-01 13:32:50 --> Riwayat SMS disimpan: {"tujuan":"082188832471","pesan":"hai nama saya +_{}:\"#$!!@","status":"success","message":"Permintaan diproses. Sisa Credit : 159"}
+INFO - 2025-11-01 13:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-11-01 13:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

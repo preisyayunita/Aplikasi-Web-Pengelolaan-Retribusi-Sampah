@@ -1,0 +1,696 @@
+INFO - 2024-11-03 11:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-03 11:09:41 --> mysqli_sql_exception: Table 'dbretribusi.users' doesn't exist in engine in C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\app\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+#7 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+#8 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\O...')
+#14 {main}
+CRITICAL - 2024-11-03 11:09:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbretribusi.users' doesn't exist in engine
+[Method: POST, Route: login/proses_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-11-03 11:09:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbretribusi.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-11-03 11:09:41 --> [Caused by] mysqli_sql_exception: Table 'dbretribusi.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-03 11:13:03 --> mysqli_sql_exception: Table 'dbretribusi.users' doesn't exist in engine in C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\app\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+#7 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+#8 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\O...')
+#14 {main}
+CRITICAL - 2024-11-03 11:13:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbretribusi.users' doesn't exist in engine
+[Method: POST, Route: login/proses_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-11-03 11:13:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbretribusi.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-11-03 11:13:03 --> [Caused by] mysqli_sql_exception: Table 'dbretribusi.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'steven@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Login.php(43): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->proses_login()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 11:24:59 --> ErrorException: Undefined variable $kategori
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Views\pelanggan\history.php on line 30.
+ 1 APPPATH\Views\pelanggan\history.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/history', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(54): view('pelanggan/history')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 11:25:40 --> ErrorException: Undefined variable $kategori
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Views\pelanggan\history.php on line 30.
+ 1 APPPATH\Views\pelanggan\history.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/history', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(54): view('pelanggan/history')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 11:25:43 --> ErrorException: Undefined variable $kategori
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Views\pelanggan\history.php on line 30.
+ 1 APPPATH\Views\pelanggan\history.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/history', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(54): view('pelanggan/history')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 11:26:05 --> ErrorException: Undefined variable $user
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Views\pelanggan\default_pelanggan.php on line 31.
+ 1 APPPATH\Views\pelanggan\default_pelanggan.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\default_pelanggan.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\default_pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('pelanggan/default_pelanggan', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/history', [], true)
+ 6 APPPATH\Controllers\Pelanggan.php(54): view('pelanggan/history')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 11:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 11:49:44 --> Error: Class "App\Controllers\ModelPelanggan" not found
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Controllers\Pelanggan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 11:50:41 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Views\pelanggan\history.php on line 28.
+ 1 APPPATH\Views\pelanggan\history.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php', 28)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/history', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(58): view('pelanggan/history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 11:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 11:52:35 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Views\pelanggan\history.php on line 29.
+ 1 APPPATH\Views\pelanggan\history.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\history.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/history', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(58): view('pelanggan/history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:04:43 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pelanggan]
+in APPPATH\Views\pelanggan\default_pelanggan.php on line 31.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('pelanggan/default_pelanggan', [], true)
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/home_pelanggan', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(18): view('pelanggan/home_pelanggan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:07:40 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pelanggan/history_pelanggan]
+in APPPATH\Views\pelanggan\history.php on line 32.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/history', [], true)
+ 4 APPPATH\Controllers\Pelanggan.php(47): view('pelanggan/history', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->history_pelanggan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:12:56 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelanggan/data_pribadi]
+in APPPATH\Views\pelanggan\default_pelanggan.php on line 31.
+ 1 APPPATH\Views\pelanggan\default_pelanggan.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\default_pelanggan.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\default_pelanggan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('pelanggan/default_pelanggan', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/data_pribadi', [], true)
+ 6 APPPATH\Controllers\Pelanggan.php(127): view('pelanggan/data_pribadi', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->data_pribadi()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:22:49 --> ErrorException: Undefined variable $nama
+[Method: GET, Route: admin/edit_kategori/7]
+in APPPATH\Controllers\Admin.php on line 108.
+ 1 APPPATH\Controllers\Admin.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Controllers\\Admin.php', 108)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->edit('7')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:26:03 --> ErrorException: Undefined variable $nama
+[Method: GET, Route: admin/akun_petugas]
+in APPPATH\Controllers\Admin.php on line 255.
+ 1 APPPATH\Controllers\Admin.php(255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Controllers\\Admin.php', 255)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->akunPetugas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:28:11 --> ErrorException: Undefined variable $nama
+[Method: GET, Route: admin/akun_pelanggan]
+in APPPATH\Controllers\Admin.php on line 233.
+ 1 APPPATH\Controllers\Admin.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Controllers\\Admin.php', 233)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->akunPelanggan()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:38:24 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: pelanggan/data_pribadi]
+in APPPATH\Views\pelanggan\data_pribadi.php on line 18.
+ 1 APPPATH\Views\pelanggan\data_pribadi.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\data_pribadi.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\data_pribadi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/data_pribadi', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(126): view('pelanggan/data_pribadi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->data_pribadi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 12:39:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: pelanggan/data_pribadi]
+in APPPATH\Views\pelanggan\data_pribadi.php on line 18.
+ 1 APPPATH\Views\pelanggan\data_pribadi.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\data_pribadi.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\pelanggan\\data_pribadi.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelanggan/data_pribadi', [], true)
+ 5 APPPATH\Controllers\Pelanggan.php(126): view('pelanggan/data_pribadi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelanggan->data_pribadi()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelanggan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 12:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 12:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 13:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 13:51:49 --> ErrorException: Undefined variable $user
+[Method: GET, Route: petugas/bukti_bayar]
+in APPPATH\Views\admin\default_admin.php on line 33.
+ 1 APPPATH\Views\admin\default_admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('admin/default_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/bukti_bayar', [], true)
+ 6 APPPATH\Controllers\Petugas.php(16): view('petugas/bukti_bayar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->bukti_bayar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 14:15:48 --> ErrorException: Undefined variable $user
+[Method: GET, Route: petugas/bukti_bayar]
+in APPPATH\Views\admin\default_admin.php on line 33.
+ 1 APPPATH\Views\admin\default_admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('admin/default_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/bukti_bayar', [], true)
+ 6 APPPATH\Controllers\Petugas.php(16): view('petugas/bukti_bayar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->bukti_bayar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 14:15:50 --> ErrorException: Undefined variable $user
+[Method: GET, Route: petugas/bukti_bayar]
+in APPPATH\Views\admin\default_admin.php on line 33.
+ 1 APPPATH\Views\admin\default_admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('admin/default_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/bukti_bayar', [], true)
+ 6 APPPATH\Controllers\Petugas.php(16): view('petugas/bukti_bayar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->bukti_bayar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 14:15:51 --> ErrorException: Undefined variable $user
+[Method: GET, Route: petugas/bukti_bayar]
+in APPPATH\Views\admin\default_admin.php on line 33.
+ 1 APPPATH\Views\admin\default_admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('admin/default_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/bukti_bayar', [], true)
+ 6 APPPATH\Controllers\Petugas.php(16): view('petugas/bukti_bayar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->bukti_bayar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 14:15:52 --> ErrorException: Undefined variable $user
+[Method: GET, Route: petugas/bukti_bayar]
+in APPPATH\Views\admin\default_admin.php on line 33.
+ 1 APPPATH\Views\admin\default_admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('admin/default_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/bukti_bayar', [], true)
+ 6 APPPATH\Controllers\Petugas.php(16): view('petugas/bukti_bayar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->bukti_bayar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 14:16:15 --> ErrorException: Undefined variable $user
+[Method: GET, Route: petugas/bukti_bayar]
+in APPPATH\Views\admin\default_admin.php on line 33.
+ 1 APPPATH\Views\admin\default_admin.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\default_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('admin/default_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/bukti_bayar', [], true)
+ 6 APPPATH\Controllers\Petugas.php(16): view('petugas/bukti_bayar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->bukti_bayar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 14:18:43 --> ErrorException: Undefined variable $user
+[Method: GET, Route: petugas]
+in APPPATH\Views\petugas\default_petugas.php on line 33.
+ 1 APPPATH\Views\petugas\default_petugas.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\petugas\\default_petugas.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\petugas\\default_petugas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('petugas/default_petugas', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/home_petugas', [], true)
+ 6 APPPATH\Controllers\Petugas.php(12): view('petugas/home_petugas')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 14:19:00 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: petugas]
+in APPPATH\Views\petugas\default_petugas.php on line 33.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('petugas/default_petugas', [], true)
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('petugas/home_petugas', [], true)
+ 4 APPPATH\Controllers\Petugas.php(12): view('petugas/home_petugas')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Petugas->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 14:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 14:59:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-03 15:04:53 --> ErrorException: Undefined array key "kategori"
+[Method: GET, Route: admin/validasi_berkas]
+in APPPATH\Views\admin\validasi_berkas.php on line 45.
+ 1 APPPATH\Views\admin\validasi_berkas.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kategori"', 'C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\validasi_berkas.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\app\\Views\\admin\\validasi_berkas.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/validasi_berkas', [], true)
+ 5 APPPATH\Controllers\Admin.php(36): view('admin/validasi_berkas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->validasi_berkas()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-11-03 15:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-03 15:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

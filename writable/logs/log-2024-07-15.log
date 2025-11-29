@@ -1,0 +1,363 @@
+INFO - 2024-07-15 14:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-15 14:03:22 --> mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list' in C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategor...', 0)
+#1 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategor...')
+#2 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategor...')
+#3 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategor...', Array, false)
+#4 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\app\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+#6 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\O...')
+#12 {main}
+CRITICAL - 2024-07-15 14:03:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+[Method: PUT, Route: admin/update_pelanggan12]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:03:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:03:22 --> [Caused by] mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-07-15 14:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-15 14:08:42 --> mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list' in C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategor...', 0)
+#1 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategor...')
+#2 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategor...')
+#3 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategor...', Array, false)
+#4 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\app\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin->update('_elanggan12')
+#6 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\O...')
+#12 {main}
+CRITICAL - 2024-07-15 14:08:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+[Method: PUT, Route: admin/update_elanggan12]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_elanggan12')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:08:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_elanggan12\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_elanggan12\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_elanggan12')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:08:42 --> [Caused by] mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_elanggan12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_elanggan12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_elanggan12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_elanggan12')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-07-15 14:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-15 14:11:29 --> mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list' in C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategor...', 0)
+#1 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategor...')
+#2 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategor...')
+#3 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategor...', Array, false)
+#4 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\app\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+#6 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\O...')
+#12 {main}
+CRITICAL - 2024-07-15 14:11:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+[Method: PUT, Route: admin/update_pelanggan12]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:11:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:11:29 --> [Caused by] mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_pelanggan12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_pelanggan12')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-07-15 14:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-15 14:14:33 --> mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list' in C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategor...', 0)
+#1 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategor...')
+#2 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategor...')
+#3 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategor...', Array, false)
+#4 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\app\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin->update('_planggan12')
+#6 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\O...')
+#12 {main}
+CRITICAL - 2024-07-15 14:14:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+[Method: PUT, Route: admin/update_planggan12]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_planggan12')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:14:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_planggan12\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_planggan12\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_planggan12')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:14:33 --> [Caused by] mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_planggan12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_planggan12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'_planggan12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('_planggan12')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-07-15 14:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-15 14:20:30 --> mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list' in C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategor...', 0)
+#1 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategor...')
+#2 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategor...')
+#3 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategor...', Array, false)
+#4 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\app\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Admin->update('pelanggan12')
+#6 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\user\OneDrive\Documents\skripsiiiiiiiiiiiiiii\retribusi-sampah-master\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\O...')
+#12 {main}
+CRITICAL - 2024-07-15 14:20:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+[Method: PUT, Route: admin/updatepelanggan12]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('pelanggan12')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:20:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'pelanggan12\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'pelanggan12\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 4 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('pelanggan12')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+CRITICAL - 2024-07-15 14:20:30 --> [Caused by] mysqli_sql_exception: Unknown column 'nama_pelanggan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'pelanggan12\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'pelanggan12\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kategori` SET `nama_pelanggan` = \'Indomaret\', `desa` = \'Eris\', `kecamatan` = \'Eris\', `kategori` = \'Toko\', `sub_kategori` = \'Luas Bangunan 50 - 100 m2\', `tarif_bulanan` = \'15000\'
+WHERE `id` = \'pelanggan12\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `kategori` SET `nama_pelanggan` = :nama_pelanggan:, `desa` = :desa:, `kecamatan` = :kecamatan:, `kategori` = :kategori:, `sub_kategori` = :sub_kategori:, `tarif_bulanan` = :tarif_bulanan:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Admin.php(68): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->update('pelanggan12')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-07-15 14:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-15 14:22:34 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::ubahpelanggan()
+[Method: PUT, Route: admin/ubahpelanggan12]
+in APPPATH\Controllers\Admin.php on line 126.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->ubahpelanggan('12')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\Users\\user\\OneDrive\\Documents\\skripsiiiiiiiiiiiiiii\\retribusi-sampah-master\\public\\index.php')
+INFO - 2024-07-15 14:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-15 14:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
